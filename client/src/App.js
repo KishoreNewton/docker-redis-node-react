@@ -10,6 +10,7 @@ class App extends Component {
     return(
       <Router>
         <div className="App">
+          <h1 style={{top: "25%"}, {left: "25%"}, {right: "25%"}}>Fib Calculator</h1>
           <header>
             <Link to="/">Home</Link>
             <Link to="/otherpage">Other Page</Link>
