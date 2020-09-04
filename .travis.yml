@@ -13,7 +13,6 @@ before_install:
     - gcloud config set project steadfast-icon-288421
     - gcloud config set compute/zone us-central1-a
     - gcloud config set container/use_client_certificate True
-    - gcloud services enable container.googleapis.com
     - gcloud container clusters get-credentials multi-cluster --zone us-central1-a --project steadfast-icon-288421
     - echo "$DOCKER_PASSWORD"  | docker login -u "$DOCKER_USERNAME" --password-stdin
     - docker build -t kishorenewton/react-test -f ./client/Dockerfile.dev ./client
